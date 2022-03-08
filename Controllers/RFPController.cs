@@ -23,9 +23,14 @@ namespace EasyAuthAPIPOC.Controllers
         }
 
         // GET api/values/5
-        public string Get(int id)
+        public RFP Get(string id)
         {
-            return "value";
+            return new RFP()
+                {
+                    ID = id,
+                    Name = "Cloud Modernization",
+                    Description = "Cloud Modernization"
+                };
         }
     }
 
